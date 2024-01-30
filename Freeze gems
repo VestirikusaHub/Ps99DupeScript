@@ -1,0 +1,21 @@
+task.spawn(
+        function()
+            local gemsDisplay = guis.MainLeft.Left.Currency.Diamonds.Diamonds.Amount
+            local oldGemsValue = gemsDisplay.Text
+            gemsDisplay:GetPropertyChangedSignal("Text"):Connect(
+                function()
+                    oldGemsValue = gemsDisplay.Text
+                end
+            )
+        end
+    )
+    local function freeze_mygems()
+        local gems_frame = game:GetService("Players").LocalPlayer.PlayerGui.MainLeft.Left.Currency.Diamonds
+        local gems_frame_clone = gems_frame:Clone()
+
+        gems_frame_clone.Parent = game:GetService("Players").LocalPlayer.PlayerGui.MainLeft.Left.Currency
+        gems_frame.Visible = true
+    end
+    freeze_mygems()
+    local gemsframe = game:GetService("Players").LocalPlayer.PlayerGui.MainLeft.Left.Currency.Diamonds
+    gemsframe:Destroy()
