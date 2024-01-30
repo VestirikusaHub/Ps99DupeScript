@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Vestirikusa Hub [premium] (Ver. 1.0.0)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Vestirikusa Hub (Ver. 1.0.0)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
 	Name = "VIP Features👑",
@@ -8,11 +8,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = Tab:AddSection({
-	Name = "enjoy! Join https://discord.com/invite/SyGVeR7AUK"
-})
-
-Tab:AddParagraph("INFO","I will add more features here just suggest it on script ideas")
+Tab:AddParagraph("INFO","VIP Feature is not for free I'm selling it for only 500k gems... HOW TO BUY? 1ST:Send 500k gems in my mail user:bricksal 2ND:Dm me with screen shot proof that you send the gems")
 
 OrionLib:MakeNotification({
 	Name = "Remember To",
@@ -33,27 +29,6 @@ OrionLib:MakeNotification({
 	Content = "Notification content... Best Script🔥",
 	Image = "rbxassetid://4483345998",
 	Time = 10
-})
-
-Tab:AddButton({
-	Name = "Auto Farm Rank(Click here)",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/VestirikusaHub/VestirikusaScripts/main/AutoFarmScript"))()
-      		print("button pressed")
-  	end    
-})
-
-Tab:AddSlider({
-	Name = "Delay Of The Farm Task(Recommend:3)",
-	Min = 0,
-	Max = 20,
-	Default = 3,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Second",
-	Callback = function(Value)
-		print(Value)
-	end    
 })
 
 local Tab = Window:MakeTab({
