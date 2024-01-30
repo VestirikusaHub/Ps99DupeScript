@@ -1,0 +1,112 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Vestirikusa Hub (Ver. 1.0.0)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "VIP Features👑",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("INFO","VIP Feature is not for free I'm selling it for only 500k gems... HOW TO BUY? 1ST:Send 500k gems in my mail user:bricksal 2ND:Dm me with screen shot proof that you send the gems")
+
+OrionLib:MakeNotification({
+	Name = "Remember To",
+	Content = "Notification content... Join https://discord.com/invite/YnZAQAHhFh",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+
+OrionLib:MakeNotification({
+	Name = "Best Script🔥",
+	Content = "Notification content... Pet Simulator 99 All In One Script",
+	Image = "rbxassetid://4483345998",
+	Time = 8
+})
+
+OrionLib:MakeNotification({
+	Name = "Op🔥",
+	Content = "Notification content... Best Script🔥",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+
+local Tab = Window:MakeTab({
+	Name = "Auto Present 🎁",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Auto Farm Present(Click here)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Justanotherdme/scripts/main/hiddenauto.lua"))()
+      		print("button pressed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "OP MiniGame🎮🔥",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Enjoy!"
+})
+
+Tab:AddButton({
+	Name = "Auto Digsite⛏️(Click here)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VestirikusaHub/VestirikusaScripts/main/Digsite"))()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Auto Fishing🐟(Click here)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VestirikusaHub/VestirikusaScripts/main/Auto%20fish"))()
+      		print("button pressed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Visual Gems💎",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "auto 999m gems(only visual)"
+})
+
+Tab:AddButton({
+	Name = "Visual Gems💎(Click here)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VestirikusaHub/VestirikusaScripts/main/Visual%20Gems"))()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Freeze Gem💎(Click here)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VestirikusaHub/VestirikusaScripts/main/Freeze%20gems"))()
+      		print("button pressed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Anti Afk(Click here)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VestirikusaHub/VestirikusaScripts/main/Anti%20afk"))()
+      		print("button pressed")
+  	end    
+})
